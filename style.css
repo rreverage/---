@@ -29,8 +29,8 @@ body::before {
             45deg,
             transparent,
             transparent 2px,
-            rgba(100, 150, 200, 0.03) 2px,
-            rgba(100, 150, 200, 0.03) 8px
+            rgba(79, 123, 167, 0.03) 2px,
+            rgba(0, 128, 255, 0.03) 8px
         );
     pointer-events: none;
 }
@@ -91,7 +91,7 @@ body::before {
 }
 
 .score-box {
-    text-align: center;
+    text-align: end;
     width: 100%;
     background: linear-gradient(135deg, #020a14cc, #01060ecc);
     border-radius: 44px;
