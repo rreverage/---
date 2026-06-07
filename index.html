@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Тетрис — большой формат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-panel">
+            <canvas id="tetrisCanvas" width="400" height="800"></canvas>
+        </div>
+        <div class="info-panel">
+            <div class="score-box">
+                <div class="label">СЧЁТ</div>
+                <div id="score">0</div>
+            </div>
+            <div class="score-box">
+                <div class="label">УРОВЕНЬ</div>
+                <div id="level">0</div>
+            </div>
+            <div class="next-box">
+                <div class="label">СЛЕДУЮЩАЯ</div>
+                <canvas id="nextCanvas" width="150" height="150"></canvas>
+            </div>
+            <button id="resetBtn">🔄 НОВАЯ ИГРА</button>
+            <div class="controls">
+                <div>← →  — движение</div>
+                <div>↑     — поворот</div>
+                <div>↓     — быстрее</div>
+                <div>␣     — вниз мгновенно</div>
+            </div>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
