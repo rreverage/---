@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Тетрис — большой формат</title>
+    <title>Тетрис — премиум формат</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-wrapper">
-        <div class="game-panel">
-            <canvas id="tetrisCanvas" width="400" height="800"></canvas>
-        </div>
-        <div class="info-panel">
-            <div class="score-box">
-                <div class="label">СЧЁТ</div>
-                <div id="score">0</div>
+    <div class="game-container">
+        <div class="game-wrapper">
+            <div class="game-panel">
+                <canvas id="tetrisCanvas" width="400" height="800"></canvas>
             </div>
-            <div class="score-box">
-                <div class="label">УРОВЕНЬ</div>
-                <div id="level">0</div>
-            </div>
-            <div class="next-box">
-                <div class="label">СЛЕДУЮЩАЯ</div>
-                <canvas id="nextCanvas" width="150" height="150"></canvas>
-            </div>
-            <button id="resetBtn">🔄 НОВАЯ ИГРА</button>
-            <div class="controls">
-                <div>← →  — движение</div>
-                <div>↑     — поворот</div>
-                <div>↓     — быстрее</div>
-                <div>␣     — вниз мгновенно</div>
+            <div class="info-panel">
+                <div class="score-box">
+                    <div class="label">СЧЁТ</div>
+                    <div id="score" class="score-value">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="label">УРОВЕНЬ</div>
+                    <div id="level" class="level-value">0</div>
+                </div>
+                <div class="next-box">
+                    <div class="label">СЛЕДУЮЩАЯ</div>
+                    <canvas id="nextCanvas" width="150" height="150"></canvas>
+                </div>
+                <button id="resetBtn" class="reset-button">
+                    <span class="btn-icon">🔄</span>
+                    <span>НОВАЯ ИГРА</span>
+                </button>
+                <div class="controls">
+                    <div class="control-row">
+                        <span class="key">←</span> <span class="key">→</span>
+                        <span class="control-text">— движение</span>
+                    </div>
+                    <div class="control-row">
+                        <span class="key">↑</span>
+                        <span class="control-text">— поворот</span>
+                    </div>
+                    <div class="control-row">
+                        <span class="key">↓</span>
+                        <span class="control-text">— быстрее</span>
+                    </div>
+                    <div class="control-row">
+                        <span class="key">␣</span>
+                        <span class="control-text">— мгновенно вниз</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
